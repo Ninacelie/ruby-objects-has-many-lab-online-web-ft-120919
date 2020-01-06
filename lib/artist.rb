@@ -8,4 +8,5 @@ class Artist
 
   def song
     @song
+  end
 end
