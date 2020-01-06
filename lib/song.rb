@@ -3,21 +3,16 @@ class Song
 
   @@all = []
 
-  def initialize(name, artist=nil)
+  def initialize(name)
     @name = name
-    @artist = artist
     @@all << self
   end
 
-  def artist_name
-    if self.artist
-      self.artist.name
-    else
-      nil
-    end
+  def self.all
+    @@all  
   end
 
-  def self.all
-    @@all
+  def artist_name
+    self.artist = 
   end
 end
